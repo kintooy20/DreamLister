@@ -3,8 +3,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:orientation="vertical"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:layout_margin="8dp">
+    android:layout_height="wrap_content"
+    android:layout_margin="5dp">
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
@@ -13,14 +13,14 @@
         android:layout_width="100dp"
         android:layout_height="100dp"
         android:layout_centerVertical="true"
-        android:layout_marginBottom="35dp"
+        android:layout_margin="5dp"
         android:src="@mipmap/ic_launcher"
         android:scaleType="fitXY"/>
 
     <TextView
         android:id="@+id/tvName"
         android:textSize="24sp"
-        android:layout_margin="4dp"
+        android:layout_margin="5dp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_toRightOf="@+id/ivItem"
@@ -40,7 +40,7 @@
         android:id="@+id/tvPrice"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_margin="4dp"
+        android:layout_margin="5dp"
         android:layout_toRightOf="@+id/ivItem"
         android:layout_below="@+id/tvDescription"
         tools:text="Price: 12,000.00"

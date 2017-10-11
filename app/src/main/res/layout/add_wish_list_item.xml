@@ -9,7 +9,7 @@
     <ImageView
         android:id="@+id/ivItem"
         android:layout_width="match_parent"
-        android:layout_height="250dp"
+        android:layout_height="240dp"
         android:layout_marginBottom="35dp"
         android:scaleType="fitXY"
         android:onClick="addPhoto"/>
@@ -18,18 +18,21 @@
         android:id="@+id/etName"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:hint="Name"
         android:layout_below="@+id/ivItem"/>
 
     <EditText
         android:id="@+id/etDescription"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:hint="Description"
         android:layout_below="@+id/etName"/>
 
     <EditText
         android:id="@+id/etPrice"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:hint="Price"
         android:inputType="numberDecimal"
         android:layout_below="@+id/etDescription"/>
 

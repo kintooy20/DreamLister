@@ -50,6 +50,9 @@ public class MainActivity extends AppCompatActivity {
         if (requestCode == REQUEST_CODE_ADD && resultCode == RESULT_OK && data != null) {
             item = (Item) data.getSerializableExtra(AddWishListItemActivity.KEY_ADD);
             db.addWishListItem(item);
+            Intent intent = getIntent();
+            finish();
+            startActivity(intent);
         }
     }
 }
