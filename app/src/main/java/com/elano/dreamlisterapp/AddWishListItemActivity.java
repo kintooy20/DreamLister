@@ -62,7 +62,7 @@ public class AddWishListItemActivity extends AppCompatActivity {
             setResult(Activity.RESULT_OK, intent);
             finish();
         } catch (Exception e) {
-            Toast.makeText(this, "Please input empty fields.", Toast.LENGTH_SHORT).show();
+            Toast.makeText(this, "Please provide empty field(s).", Toast.LENGTH_SHORT).show();
             e.printStackTrace();
         }
     }

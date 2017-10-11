@@ -5,6 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:layout_margin="5dp">
+
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
@@ -20,30 +21,28 @@
     <TextView
         android:id="@+id/tvName"
         android:textSize="24sp"
-        android:layout_margin="5dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="20dp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_toRightOf="@+id/ivItem"
-        tools:text="Name: Zachervin Tayong"/>
-
-    <TextView
-        android:id="@+id/tvDescription"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_margin="4dp"
-        android:layout_toRightOf="@+id/ivItem"
-        android:layout_below="@+id/tvName"
-        tools:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit."
-        tools:textSize="18sp"/>
+        tools:text="Kent Gimenez"/>
 
     <TextView
         android:id="@+id/tvPrice"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_margin="5dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="20dp"
+        android:textSize="20sp"
         android:layout_toRightOf="@+id/ivItem"
-        android:layout_below="@+id/tvDescription"
+        android:layout_alignBottom="@+id/ivItem"
+        android:layout_below="@+id/tvName"
         tools:text="Price: 12,000.00"
-        tools:textSize="18sp"/>
+        tools:textSize="20sp"/>
+
     </RelativeLayout>
+
 </RelativeLayout>

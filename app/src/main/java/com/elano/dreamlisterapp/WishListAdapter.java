@@ -10,6 +10,7 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import java.util.List;
+import java.util.Locale;
 
 /**
  * Created by Gimenez and Elano on 10/8/2017.
@@ -33,8 +34,7 @@ class WishListAdapter extends RecyclerView.Adapter <WishListAdapter.MyViewHolder
         Item item = items.get(position);
         Bitmap bm = BitmapFactory.decodeByteArray(item.getImage(), 0, item.getImage().length);
         holder.name.setText(item.getName());
-        holder.description.setText(item.getDescription());
-        holder.price.setText(String.valueOf(item.getPrice()));
+        holder.price.setText(String.format(Locale.US, "%s: %,.2f", "Price", item.getPrice()));
         holder.image.setImageBitmap(bm);
     }
 
@@ -52,7 +52,6 @@ class WishListAdapter extends RecyclerView.Adapter <WishListAdapter.MyViewHolder
             super(itemView);
             image = (ImageView) itemView.findViewById(R.id.ivItem);
             name = (TextView) itemView.findViewById(R.id.tvName);
-            description = (TextView) itemView.findViewById(R.id.tvDescription);
             price = (TextView) itemView.findViewById(R.id.tvPrice);
         }
     }
