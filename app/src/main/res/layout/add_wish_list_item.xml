@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="25dp">
+
+    <ImageView
+        android:id="@+id/ivItem"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:layout_marginBottom="35dp"
+        android:scaleType="fitXY"
+        android:onClick="addPhoto"/>
+
+    <EditText
+        android:id="@+id/etName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ivItem"/>
+
+    <EditText
+        android:id="@+id/etDescription"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/etName"/>
+
+    <EditText
+        android:id="@+id/etPrice"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal"
+        android:layout_below="@+id/etDescription"/>
+
+    <Button
+        android:id="@+id/btnAddWishList"
+        android:layout_width="match_parent"
+        android:layout_height="72dp"
+        android:layout_below="@+id/etPrice"
+        android:text="@string/add_to_wish_list"
+        android:layout_centerHorizontal="true"
+        android:onClick="addToWishList"/>
+
+</RelativeLayout>
