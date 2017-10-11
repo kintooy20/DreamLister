@@ -3,7 +3,7 @@ package com.elano.dreamlisterapp;
 import java.io.Serializable;
 
 /**
- * Created by Janeth on 10/8/2017.
+ * Created by Gimenez and Elano on 10/8/2017.
  */
 
 public class Item implements Serializable {

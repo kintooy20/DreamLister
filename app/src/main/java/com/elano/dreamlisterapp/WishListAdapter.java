@@ -12,7 +12,7 @@ import android.widget.TextView;
 import java.util.List;
 
 /**
- * Created by Janeth on 10/8/2017.
+ * Created by Gimenez and Elano on 10/8/2017.
  */
 
 class WishListAdapter extends RecyclerView.Adapter <WishListAdapter.MyViewHolder> {
